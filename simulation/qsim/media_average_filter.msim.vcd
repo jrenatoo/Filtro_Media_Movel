@@ -1,0 +1,1216 @@
+$comment
+	File created using the following command:
+		vcd file media_average_filter.msim.vcd -direction
+$end
+$date
+	Sun Jul 06 16:52:49 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module moving_average_filter_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 8 " DATA_IN [7:0] $end
+$var reg 1 # NEW_DATA_VALID $end
+$var reg 1 $ RST $end
+$var wire 1 % DATA_OUT [7] $end
+$var wire 1 & DATA_OUT [6] $end
+$var wire 1 ' DATA_OUT [5] $end
+$var wire 1 ( DATA_OUT [4] $end
+$var wire 1 ) DATA_OUT [3] $end
+$var wire 1 * DATA_OUT [2] $end
+$var wire 1 + DATA_OUT [1] $end
+$var wire 1 , DATA_OUT [0] $end
+$var wire 1 - DATA_OUT_VALID $end
+$var wire 1 . sampler $end
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var tri1 1 2 devclrn $end
+$var tri1 1 3 devpor $end
+$var tri1 1 4 devoe $end
+$var wire 1 5 U_Datapath|Add1~2_combout $end
+$var wire 1 6 U_Datapath|sum_stage1_a[0]~0_combout $end
+$var wire 1 7 RST~combout $end
+$var wire 1 8 NEW_DATA_VALID~combout $end
+$var wire 1 9 U_Control|SHIFT_EN~regout $end
+$var wire 1 : U_Datapath|sample_1[1]~feeder_combout $end
+$var wire 1 ; U_Datapath|sample_2[1]~feeder_combout $end
+$var wire 1 < U_Datapath|Add1~1 $end
+$var wire 1 = U_Datapath|Add1~3 $end
+$var wire 1 > U_Datapath|Add1~4_combout $end
+$var wire 1 ? U_Datapath|sum_stage1_a[0]~1 $end
+$var wire 1 @ U_Datapath|sum_stage1_a[1]~3 $end
+$var wire 1 A U_Datapath|sum_stage1_a[2]~4_combout $end
+$var wire 1 B U_Datapath|sum_stage1_a[1]~2_combout $end
+$var wire 1 C U_Datapath|Add1~0_combout $end
+$var wire 1 D U_Datapath|Add2~1_cout $end
+$var wire 1 E U_Datapath|Add2~3_cout $end
+$var wire 1 F U_Datapath|DATA_OUT[0]~0_combout $end
+$var wire 1 G U_Datapath|sample_2[3]~feeder_combout $end
+$var wire 1 H U_Datapath|Add1~5 $end
+$var wire 1 I U_Datapath|Add1~6_combout $end
+$var wire 1 J U_Datapath|sum_stage1_a[2]~5 $end
+$var wire 1 K U_Datapath|sum_stage1_a[3]~6_combout $end
+$var wire 1 L U_Datapath|DATA_OUT[0]~1 $end
+$var wire 1 M U_Datapath|DATA_OUT[1]~2_combout $end
+$var wire 1 N U_Datapath|sample_0[4]~feeder_combout $end
+$var wire 1 O U_Datapath|sum_stage1_a[3]~7 $end
+$var wire 1 P U_Datapath|sum_stage1_a[4]~8_combout $end
+$var wire 1 Q U_Datapath|Add1~7 $end
+$var wire 1 R U_Datapath|Add1~8_combout $end
+$var wire 1 S U_Datapath|DATA_OUT[1]~3 $end
+$var wire 1 T U_Datapath|DATA_OUT[2]~4_combout $end
+$var wire 1 U U_Datapath|sum_stage1_a[4]~9 $end
+$var wire 1 V U_Datapath|sum_stage1_a[5]~10_combout $end
+$var wire 1 W U_Datapath|sample_2[5]~feeder_combout $end
+$var wire 1 X U_Datapath|Add1~9 $end
+$var wire 1 Y U_Datapath|Add1~10_combout $end
+$var wire 1 Z U_Datapath|DATA_OUT[2]~5 $end
+$var wire 1 [ U_Datapath|DATA_OUT[3]~6_combout $end
+$var wire 1 \ U_Datapath|sum_stage1_a[5]~11 $end
+$var wire 1 ] U_Datapath|sum_stage1_a[6]~12_combout $end
+$var wire 1 ^ U_Datapath|sample_2[6]~feeder_combout $end
+$var wire 1 _ U_Datapath|Add1~11 $end
+$var wire 1 ` U_Datapath|Add1~12_combout $end
+$var wire 1 a U_Datapath|DATA_OUT[3]~7 $end
+$var wire 1 b U_Datapath|DATA_OUT[4]~8_combout $end
+$var wire 1 c U_Datapath|sample_0[7]~feeder_combout $end
+$var wire 1 d U_Datapath|sum_stage1_a[6]~13 $end
+$var wire 1 e U_Datapath|sum_stage1_a[7]~14_combout $end
+$var wire 1 f U_Datapath|sample_1[7]~feeder_combout $end
+$var wire 1 g U_Datapath|sample_2[7]~feeder_combout $end
+$var wire 1 h U_Datapath|Add1~13 $end
+$var wire 1 i U_Datapath|Add1~14_combout $end
+$var wire 1 j U_Datapath|DATA_OUT[4]~9 $end
+$var wire 1 k U_Datapath|DATA_OUT[5]~10_combout $end
+$var wire 1 l U_Datapath|Add1~15 $end
+$var wire 1 m U_Datapath|Add1~16_combout $end
+$var wire 1 n U_Datapath|sum_stage1_a[7]~15 $end
+$var wire 1 o U_Datapath|Add0~0_combout $end
+$var wire 1 p U_Datapath|DATA_OUT[5]~11 $end
+$var wire 1 q U_Datapath|DATA_OUT[6]~12_combout $end
+$var wire 1 r U_Datapath|DATA_OUT[6]~13 $end
+$var wire 1 s U_Datapath|DATA_OUT[7]~14_combout $end
+$var wire 1 t CLK~combout $end
+$var wire 1 u CLK~clkctrl_outclk $end
+$var wire 1 v U_Control|data_count[0]~2_combout $end
+$var wire 1 w U_Control|data_count[1]~1_combout $end
+$var wire 1 x U_Control|data_count[2]~0_combout $end
+$var wire 1 y U_Control|Equal0~0_combout $end
+$var wire 1 z U_Control|DATA_OUT_VALID~regout $end
+$var wire 1 { U_Control|data_count [2] $end
+$var wire 1 | U_Control|data_count [1] $end
+$var wire 1 } U_Control|data_count [0] $end
+$var wire 1 ~ U_Datapath|sample_3 [7] $end
+$var wire 1 !! U_Datapath|sample_3 [6] $end
+$var wire 1 "! U_Datapath|sample_3 [5] $end
+$var wire 1 #! U_Datapath|sample_3 [4] $end
+$var wire 1 $! U_Datapath|sample_3 [3] $end
+$var wire 1 %! U_Datapath|sample_3 [2] $end
+$var wire 1 &! U_Datapath|sample_3 [1] $end
+$var wire 1 '! U_Datapath|sample_3 [0] $end
+$var wire 1 (! U_Datapath|sample_2 [7] $end
+$var wire 1 )! U_Datapath|sample_2 [6] $end
+$var wire 1 *! U_Datapath|sample_2 [5] $end
+$var wire 1 +! U_Datapath|sample_2 [4] $end
+$var wire 1 ,! U_Datapath|sample_2 [3] $end
+$var wire 1 -! U_Datapath|sample_2 [2] $end
+$var wire 1 .! U_Datapath|sample_2 [1] $end
+$var wire 1 /! U_Datapath|sample_2 [0] $end
+$var wire 1 0! U_Datapath|sample_1 [7] $end
+$var wire 1 1! U_Datapath|sample_1 [6] $end
+$var wire 1 2! U_Datapath|sample_1 [5] $end
+$var wire 1 3! U_Datapath|sample_1 [4] $end
+$var wire 1 4! U_Datapath|sample_1 [3] $end
+$var wire 1 5! U_Datapath|sample_1 [2] $end
+$var wire 1 6! U_Datapath|sample_1 [1] $end
+$var wire 1 7! U_Datapath|sample_1 [0] $end
+$var wire 1 8! U_Datapath|sample_0 [7] $end
+$var wire 1 9! U_Datapath|sample_0 [6] $end
+$var wire 1 :! U_Datapath|sample_0 [5] $end
+$var wire 1 ;! U_Datapath|sample_0 [4] $end
+$var wire 1 <! U_Datapath|sample_0 [3] $end
+$var wire 1 =! U_Datapath|sample_0 [2] $end
+$var wire 1 >! U_Datapath|sample_0 [1] $end
+$var wire 1 ?! U_Datapath|sample_0 [0] $end
+$var wire 1 @! DATA_IN~combout [7] $end
+$var wire 1 A! DATA_IN~combout [6] $end
+$var wire 1 B! DATA_IN~combout [5] $end
+$var wire 1 C! DATA_IN~combout [4] $end
+$var wire 1 D! DATA_IN~combout [3] $end
+$var wire 1 E! DATA_IN~combout [2] $end
+$var wire 1 F! DATA_IN~combout [1] $end
+$var wire 1 G! DATA_IN~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+1$
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0-
+x.
+0/
+10
+x1
+12
+13
+14
+05
+06
+17
+08
+09
+0:
+0;
+0<
+1=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+1E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+1O
+0P
+1Q
+0R
+1S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+1\
+0]
+0^
+1_
+0`
+1a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+1l
+0m
+1n
+0o
+1p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0}
+0|
+0{
+0'!
+0&!
+0%!
+0$!
+0#!
+0"!
+0!!
+0~
+0/!
+0.!
+0-!
+0,!
+0+!
+0*!
+0)!
+0(!
+07!
+06!
+05!
+04!
+03!
+02!
+01!
+00!
+0?!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+$end
+#10000
+1!
+1t
+1u
+0.
+#20000
+0!
+0t
+0u
+1.
+#30000
+1!
+1t
+1u
+0.
+#40000
+0$
+0!
+07
+0t
+0u
+1.
+#50000
+1!
+1t
+1u
+0.
+#60000
+1#
+b100 "
+b101 "
+0!
+18
+1G!
+1E!
+0t
+0u
+1.
+1v
+#70000
+1!
+1t
+1u
+0.
+1}
+19
+1w
+0v
+#80000
+0#
+0!
+08
+0t
+0u
+1.
+0w
+1v
+#90000
+1!
+1t
+1u
+0.
+1?!
+1=!
+09
+16
+1A
+1F
+1,
+#100000
+0!
+0t
+0u
+1.
+#110000
+1!
+1t
+1u
+0.
+#120000
+b1101 "
+b1111 "
+b1011 "
+b1010 "
+1#
+0!
+0G!
+1F!
+0E!
+1D!
+18
+0t
+0u
+1.
+1w
+0v
+#130000
+1!
+1t
+1u
+0.
+1|
+0}
+19
+1v
+#140000
+0#
+0!
+08
+0t
+0u
+1.
+0v
+#150000
+1!
+1t
+1u
+0.
+1<!
+17!
+0?!
+1>!
+15!
+0=!
+09
+1K
+1B
+1:
+1M
+1+
+#160000
+0!
+0t
+0u
+1.
+#170000
+1!
+1t
+1u
+0.
+#180000
+b1110 "
+b1111 "
+1#
+0!
+1G!
+1E!
+18
+0t
+0u
+1.
+1v
+#190000
+1!
+1t
+1u
+0.
+1}
+19
+1x
+0w
+0v
+#200000
+0#
+0!
+08
+0t
+0u
+1.
+0x
+1w
+1v
+#210000
+1!
+1t
+1u
+0.
+14!
+1/!
+07!
+1?!
+16!
+1-!
+05!
+1=!
+09
+0O
+0K
+1G
+1C
+0@
+0B
+1;
+1>
+1P
+0M
+1D
+1J
+0A
+1L
+0F
+1T
+1K
+0L
+1F
+1M
+0+
+0,
+1*
+1,
+1+
+#220000
+0!
+0t
+0u
+1.
+#230000
+1!
+1t
+1u
+0.
+#240000
+b11111 "
+b10111 "
+b10101 "
+b10100 "
+1#
+0!
+0G!
+0F!
+0D!
+1C!
+18
+0t
+0u
+1.
+1N
+1x
+0w
+0v
+#250000
+1!
+1t
+1u
+0.
+1{
+0|
+0}
+19
+1y
+#260000
+0#
+0!
+08
+0t
+0u
+1.
+#270000
+1!
+1t
+1u
+0.
+1z
+1;!
+1,!
+0<!
+1'!
+0/!
+17!
+0?!
+1.!
+0>!
+1%!
+0-!
+15!
+09
+1U
+0P
+1I
+0K
+15
+1@
+1B
+0:
+1A
+1-
+1V
+0T
+0E
+0A
+1L
+0F
+1[
+0S
+0M
+0*
+0,
+1T
+1)
+0+
+1*
+#280000
+0!
+0t
+0u
+1.
+#290000
+1!
+1t
+1u
+0.
+#300000
+b110100 "
+b110000 "
+b100000 "
+b101000 "
+b101010 "
+1#
+0!
+1F!
+0E!
+1D!
+0C!
+1B!
+18
+0t
+0u
+1.
+0N
+#310000
+1!
+1t
+1u
+0.
+19
+#320000
+0#
+0!
+08
+0t
+0u
+1.
+#330000
+1!
+1t
+1u
+0.
+1:!
+13!
+0;!
+1$!
+04!
+1<!
+0'!
+1/!
+07!
+1&!
+06!
+1>!
+0%!
+1-!
+0=!
+09
+0\
+0V
+0Q
+0I
+0G
+06
+0=
+05
+0;
+1:
+0J
+1A
+1]
+0[
+1R
+1S
+1M
+0D
+1H
+0>
+1O
+1K
+1F
+1b
+1E
+1I
+0F
+0U
+1P
+0S
+0M
+0)
+1+
+1,
+0L
+1F
+1M
+1\
+1V
+1Z
+1(
+0,
+0+
+0M
+0]
+0a
+1,
+1+
+0+
+#340000
+0!
+0t
+0u
+1.
+#350000
+1!
+1t
+1u
+0.
+#360000
+b1010 "
+b10 "
+b0 "
+1#
+0!
+0F!
+0D!
+0B!
+18
+0t
+0u
+1.
+#370000
+1!
+1t
+1u
+0.
+19
+#380000
+0#
+0!
+08
+0t
+0u
+1.
+#390000
+1!
+1t
+1u
+0.
+12!
+0:!
+1+!
+03!
+0,!
+14!
+0<!
+1'!
+0/!
+0.!
+16!
+0>!
+1%!
+05!
+09
+1W
+1X
+0R
+0P
+0I
+1G
+1=
+15
+1;
+0:
+1>
+0A
+1Y
+0Z
+1S
+1M
+0>
+0E
+0T
+1+
+0*
+#400000
+0!
+0t
+0u
+1.
+#410000
+1!
+1t
+1u
+0.
+#420000
+1#
+0!
+18
+0t
+0u
+1.
+#430000
+1!
+1t
+1u
+0.
+19
+#440000
+0#
+0!
+08
+0t
+0u
+1.
+#450000
+1!
+1t
+1u
+0.
+1*!
+02!
+0+!
+0$!
+1,!
+04!
+0'!
+0&!
+1.!
+06!
+0-!
+09
+1#!
+0_
+0Y
+0W
+0V
+0K
+0G
+0C
+0B
+0;
+0H
+1>
+1`
+1a
+0M
+1E
+1Q
+1I
+1L
+0F
+0L
+1F
+0X
+1R
+0S
+0+
+0,
+1S
+1M
+1_
+1Y
+1Z
+1,
+0Z
+1T
+0`
+0a
+1+
+1a
+1[
+1*
+0b
+1)
+0(
+#460000
+0!
+0t
+0u
+1.
+#470000
+1!
+1t
+1u
+0.
+#480000
+1#
+0!
+18
+0t
+0u
+1.
+#490000
+1!
+1t
+1u
+0.
+19
+#500000
+0#
+0!
+08
+0t
+0u
+1.
+#510000
+1!
+1t
+1u
+0.
+0*!
+1$!
+0,!
+1&!
+0.!
+0%!
+09
+1"!
+0#!
+0>
+0R
+0F
+0T
+0,
+0*
+#520000
+0!
+0t
+0u
+1.
+#530000
+1!
+1t
+1u
+0.
+#540000
+1#
+0!
+18
+0t
+0u
+1.
+#550000
+1!
+1t
+1u
+0.
+19
+#560000
+0#
+0!
+08
+0t
+0u
+1.
+#570000
+1!
+1t
+1u
+0.
+0$!
+0&!
+09
+0"!
+0I
+05
+0Y
+0M
+0[
+0+
+0)
+#580000
+0!
+0t
+0u
+1.
+#590000
+1!
+1t
+1u
+0.
+#600000
+1#
+0!
+18
+0t
+0u
+1.
+#610000
+1!
+1t
+1u
+0.
+19
+#620000
+0#
+0!
+08
+0t
+0u
+1.
+#630000
+1!
+1t
+1u
+0.
+09
+#640000
+0!
+0t
+0u
+1.
+#650000
+1!
+1t
+1u
+0.
+#660000
+1#
+0!
+18
+0t
+0u
+1.
+#670000
+1!
+1t
+1u
+0.
+19
+#680000
+0#
+0!
+08
+0t
+0u
+1.
+#690000
+1!
+1t
+1u
+0.
+09
+#700000
+0!
+0t
+0u
+1.
+#710000
+1!
+1t
+1u
+0.
+#720000
+1#
+0!
+18
+0t
+0u
+1.
+#730000
+1!
+1t
+1u
+0.
+19
+#740000
+0#
+0!
+08
+0t
+0u
+1.
+#750000
+1!
+1t
+1u
+0.
+09
+#760000
+0!
+0t
+0u
+1.
+#770000
+1!
+1t
+1u
+0.
+#780000
+1#
+0!
+18
+0t
+0u
+1.
+#790000
+1!
+1t
+1u
+0.
+19
+#800000
+0#
+0!
+08
+0t
+0u
+1.
+#810000
+1!
+1t
+1u
+0.
+09
+#820000
+0!
+0t
+0u
+1.
+#830000
+1!
+1t
+1u
+0.
+#840000
+1#
+0!
+18
+0t
+0u
+1.
+#850000
+1!
+1t
+1u
+0.
+19
+#860000
+0#
+0!
+08
+0t
+0u
+1.
+#870000
+1!
+1t
+1u
+0.
+09
+#880000
+0!
+0t
+0u
+1.
+#890000
+1!
+1t
+1u
+0.
+#900000
+1#
+0!
+18
+0t
+0u
+1.
+#910000
+1!
+1t
+1u
+0.
+19
+#920000
+0#
+0!
+08
+0t
+0u
+1.
+#930000
+1!
+1t
+1u
+0.
+09
+#940000
+0!
+0t
+0u
+1.
+#950000
+1!
+1t
+1u
+0.
+#960000
+1#
+0!
+18
+0t
+0u
+1.
+#970000
+1!
+1t
+1u
+0.
+19
+#980000
+0#
+0!
+08
+0t
+0u
+1.
+#990000
+1!
+1t
+1u
+0.
+09
+#1000000
