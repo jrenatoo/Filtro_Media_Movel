@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Jgabr\OneDrive\Área de Trabalho\Projeto_SD\simulation\qsim
+vmoving_average_filter
+Z1 !s100 n0ZWz0@IdCc4kVb0U8DnW0
+Z2 ITmmVEX;OP9hI7ETQ8c5bh3
+Z3 VDDjFQYTQK6^SCo6CVF6m@3
+Z4 dC:\Users\Jgabr\OneDrive\Área de Trabalho\Projeto_SD\simulation\qsim
+Z5 w1751831568
+Z6 8media_average_filter.vo
+Z7 Fmedia_average_filter.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|media_average_filter.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1751831568.873000
+Z12 !s107 media_average_filter.vo|
+!s101 -O0
+vmoving_average_filter_vlg_check_tst
+!i10b 1
+Z13 !s100 ;GS_SPV9>j@SNM[^:3<M?0
+Z14 IB30FF]zO803^GVc;9jTW51
+Z15 VHc2T3e3BB2XKmJk8XO2ai2
+R4
+R5
+Z16 8media_average_filter.vt
+Z17 Fmedia_average_filter.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z18 !s108 1751831568.918000
+Z19 !s107 media_average_filter.vt|
+Z20 !s90 -work|work|media_average_filter.vt|
+!s101 -O0
+R10
+vmoving_average_filter_vlg_sample_tst
+!i10b 1
+Z21 !s100 T`kQ@k4HM68YN:XjDlUS23
+Z22 IYLFa8BI=PID=<4MFIQaMT3
+Z23 V7lL]=1O3bRH;fgde?<GR<0
+R4
+R5
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+vmoving_average_filter_vlg_vec_tst
+!i10b 1
+!s100 [Pf9K5>5kciKFTiGj40Ne2
+I2<H;:SlNb6MeCVYHF@b@S1
+Z24 V=AXZoodD_`O81_0AeQYLg3
+R4
+R5
+R16
+R17
+Z25 L0 310
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
